@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generator: Ikivo Animator 2.2 (build 2.2.0.10) -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1 Tiny//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd">
+<svg baseProfile="tiny" display="inherit" height="128" id="svg30671" version="1.1" viewBox="0 0 128 128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events">
+	<g display="inherit">
+		<rect fill="none" height="128" width="128"/>
+	</g>
+	<metadata id="metadata52"/>
+	<defs display="inherit" id="defs30673">
+		<linearGradient id="linearGradient31395">
+			<stop id="stop31397" offset="0" stop-color="#1050aa"/>
+			<stop id="stop31403" offset="0.5" stop-color="#3c7bc0"/>
+			<stop id="stop31399" offset="1" stop-color="#1050aa"/>
+		</linearGradient>
+		<linearGradient id="linearGradient31368">
+			<stop id="stop31370" offset="0" stop-color="#5ca1cf"/>
+			<stop id="stop31372" offset="1" stop-color="#0246a5"/>
+		</linearGradient>
+		<linearGradient id="linearGradient31354">
+			<stop id="stop31356" offset="0" stop-color="#297ed6"/>
+			<stop id="stop31362" offset="0.5" stop-color="#97bcfe"/>
+			<stop id="stop31358" offset="1" stop-color="#297ed6"/>
+		</linearGradient>
+		<linearGradient id="linearGradient31344">
+			<stop id="stop31346" offset="0" stop-color="#92d8ff"/>
+			<stop id="stop31352" offset="0.5" stop-color="#d1f8ff"/>
+			<stop id="stop31348" offset="1" stop-color="#92d8ff"/>
+		</linearGradient>
+		<linearGradient id="linearGradient31330">
+			<stop id="stop31332" offset="0" stop-color="#dafdff"/>
+			<stop id="stop31338" offset="0.37" stop-color="#6cc2fb"/>
+			<stop id="stop31340" offset="0.781" stop-color="#2c7eca"/>
+			<stop id="stop31334" offset="1" stop-color="#054ea9"/>
+		</linearGradient>
+		<linearGradient id="linearGradient31322">
+			<stop id="stop31324" offset="0" stop-color="#d8e4f2"/>
+			<stop id="stop31366" offset="0.337" stop-color="#d8e4f2"/>
+			<stop id="stop31342" offset="0.725" stop-color="#a1c9eb"/>
+			<stop id="stop31326" offset="1" stop-color="#7cbaeb"/>
+		</linearGradient>
+
+		<linearGradient gradientUnits="userSpaceOnUse" id="linearGradient31350" x1="20.602" x2="105.482" y1="84.75" y2="84.75">
+			<stop offset="0" stop-color="#1050aa"/>
+			<stop offset="0.5" stop-color="#3c7bc0"/>
+			<stop offset="1" stop-color="#1050aa"/>
+		</linearGradient>
+		<linearGradient gradientUnits="userSpaceOnUse" id="linearGradient31360" x1="15.716" x2="110.606" y1="86.766" y2="86.766">
+			<stop offset="0" stop-color="#297ed6"/>
+			<stop offset="0.5" stop-color="#97bcfe"/>
+			<stop offset="1" stop-color="#297ed6"/>
+		</linearGradient>
+
+		<linearGradient gradientUnits="userSpaceOnUse" id="linearGradient31401" x1="255.412" x2="275.382" y1="775.508" y2="775.508">
+			<stop offset="0" stop-color="#1050aa"/>
+			<stop offset="0.5" stop-color="#3c7bc0"/>
+			<stop offset="1" stop-color="#1050aa"/>
+		</linearGradient>
+		<linearGradient gradientUnits="userSpaceOnUse" id="linearGradient31401-1" x1="255.412" x2="275.382" y1="775.508" y2="775.508">
+			<stop id="stop31397-2" offset="0" stop-color="#1050aa"/>
+			<stop id="stop31403-2" offset="0.5" stop-color="#3c7bc0"/>
+			<stop id="stop31399-1" offset="1" stop-color="#1050aa"/>
+		</linearGradient>
+		<linearGradient id="linearGradient31395-8">
+			<stop offset="0" stop-color="#1050aa"/>
+			<stop offset="0.5" stop-color="#3c7bc0"/>
+			<stop offset="1" stop-color="#1050aa"/>
+		</linearGradient>
+
+		<linearGradient id="linearGradient31322-9">
+			<stop offset="0" stop-color="#d8e4f2"/>
+			<stop offset="0.337" stop-color="#d8e4f2"/>
+			<stop offset="0.725" stop-color="#a1c9eb"/>
+			<stop offset="1" stop-color="#7cbaeb"/>
+		</linearGradient>
+		<linearGradient gradientUnits="userSpaceOnUse" id="linearGradient31350-6" x1="20.602" x2="105.482" y1="84.75" y2="84.75">
+			<stop id="stop31346-5" offset="0" stop-color="#92d8ff"/>
+			<stop id="stop31352-2" offset="0.5" stop-color="#d1f8ff"/>
+			<stop id="stop31348-2" offset="1" stop-color="#92d8ff"/>
+		</linearGradient>
+		<linearGradient id="linearGradient31344-4">
+			<stop offset="0" stop-color="#92d8ff"/>
+			<stop offset="0.5" stop-color="#d1f8ff"/>
+			<stop offset="1" stop-color="#92d8ff"/>
+		</linearGradient>
+
+		<linearGradient id="linearGradient31330-1">
+			<stop offset="0" stop-color="#dafdff"/>
+			<stop offset="0.37" stop-color="#6cc2fb"/>
+			<stop offset="0.781" stop-color="#2c7eca"/>
+			<stop offset="1" stop-color="#054ea9"/>
+		</linearGradient>
+		<linearGradient gradientUnits="userSpaceOnUse" id="linearGradient3920" x1="61.975" x2="62.759" y1="108.104" y2="10.782">
+			<stop offset="0" stop-color="#dafdff"/>
+			<stop offset="0.37" stop-color="#6cc2fb"/>
+			<stop offset="0.781" stop-color="#2c7eca"/>
+			<stop offset="1" stop-color="#054ea9"/>
+		</linearGradient>
+	</defs>
+	<g display="inherit" id="layer1" transform="matrix(1,0,0,1,-70.286,-719.791)">
+		<path d="M196.033,783.803 C196.024,811.72 169.328,834.347 136.401,834.347 C103.474,834.347 76.779,811.72 76.77,783.803 C76.76,755.875 103.461,733.23 136.401,733.23 C169.342,733.23 196.043,755.875 196.033,783.803 Z" fill="#000000" fill-rule="evenodd" id="path31305-3" stroke="none"/>
+		<path d="M121.999,60.501 C121.999,88.423 95.301,111.059 62.367,111.059 C29.433,111.059 2.735,88.423 2.735,60.501 C2.735,32.578 29.433,9.942 62.367,9.942 C95.301,9.942 121.999,32.578 121.999,60.501 Z" fill="url(#linearGradient3920)" fill-rule="evenodd" id="path31305" stroke="none" stroke-dasharray="none" stroke-dashoffset="0" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="4" stroke-width="10" transform="matrix(1,0,0,1,71.219,717.458)"/>
+		<g id="g3964" transform="matrix(1,0,0,1,-84.099,-33.851)">
+			<rect fill="#000000" fill-rule="evenodd" height="46.479" id="rect31384-5" ry="6.795" stroke="none" width="18" x="211.501" y="801.803"/>
+			<path d="M230.485,789.691 C230.488,794.68 226.017,798.727 220.501,798.727 C214.984,798.727 210.513,794.68 210.516,789.691 C210.513,784.701 214.984,780.655 220.501,780.655 C226.017,780.655 230.488,784.701 230.485,789.691 Z" fill="#000000" fill-rule="evenodd" id="path31386-4" stroke="none"/>
+		</g>
+		<path d="M130.159,766.149 L134.57,766.149 C138.334,766.149 141.364,769.179 141.364,772.944 L141.364,805.833 C141.364,809.597 138.334,812.628 134.57,812.628 L130.159,812.628 C126.395,812.628 123.364,809.597 123.364,805.833 L123.364,772.944 C123.364,769.179 126.395,766.149 130.159,766.149 Z M142.46,754.037 C142.46,759.022 137.987,763.068 132.475,763.068 C126.964,763.068 122.491,759.022 122.491,754.037 C122.491,749.052 126.964,745.006 132.475,745.006 C137.987,745.006 142.46,749.052 142.46,754.037 Z" fill="url(#linearGradient31401)" fill-rule="evenodd" id="rect31388" stroke="none"/>
+		<rect fill="#ffffff" fill-rule="evenodd" height="46.479" id="rect31384" ry="6.795" stroke="none" width="18" x="123.475" y="764.641"/>
+		<path d="M142.46,752.529 C142.463,757.519 137.992,761.565 132.475,761.565 C126.959,761.565 122.488,757.519 122.491,752.529 C122.488,747.54 126.959,743.494 132.475,743.494 C137.992,743.494 142.463,747.54 142.46,752.529 Z" fill="#ffffff" fill-rule="evenodd" id="path31386" stroke="none"/>
+	</g>
+</svg>

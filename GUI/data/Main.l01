@@ -1,0 +1,39 @@
+﻿/*
+========================================================================
+ Name        : HelloWorldContainer.l01
+ Author      : Marco Bellino
+ Copyright   : FuzzyByte
+ Description : 
+========================================================================
+*/
+// localized strings for language: UK English (01)
+
+#define txt_about 		"About"
+#define txt_register_op_net 	"Using License ID"
+#define txt_register_op_code 	"Using Code"
+#define txt_buy 		"Buy"
+#define txt_register 		"Register"
+
+#define txt_about_header	"About IconHider"
+
+#define txt_reg_code 		"Registration Code:"
+#define txt_prod_1 		"License ID Part 1:"
+#define txt_prod_2 		"License ID Part 2:"
+
+#define txt_inprogress		"Transfer in Progress..\nPlease Wait."
+
+#define txt_down_completed 	"The update has been saved in the inbox message folder."
+#define txt_no_update 		"IconHider is already updated to the latest available version."
+#define txt_confirm_update 	"A new version is available.\nDownload the update?"
+
+#define txt_ok_code		"Registration Completed!"
+
+#define txt_err_code		"Wrong Registration Code!\nInsert a correct Registration code."
+#define txt_err_licnotfound	"Invalid License ID.\nInsert a correct License ID."
+#define txt_err_licdifimei	"License ID already registered.\nPlease, buy a new License ID."
+#define txt_err_licbanned	"Too Much Requests.\nPlease, Try Again Later."
+#define txt_err_licunkdata	"Server Response Problem.\nPlease, Try Again Later."
+#define txt_err_lictransmis	"Transmission Problem.\nPlease, Try Again Later."
+#define txt_err_licgeneral	"General Problem.\nPlease, Try Again Later."
+
+#define txt_err_unavailinfree	"This feature is not available in the TRIAL Version.\nBuy FULL Version."

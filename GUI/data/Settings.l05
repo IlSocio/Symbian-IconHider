@@ -1,0 +1,34 @@
+﻿/*
+========================================================================
+ Name        : HelloWorldContainer.l01
+ Author      : Marco Bellino
+ Copyright   : FuzzyByte
+ Description : 
+========================================================================
+*/
+
+#define txt_settings_title	"Impostazioni"
+#define txt_about 		"Informazioni"
+#define txt_about_2nd 		"IconHider"
+
+#define txt_check_updates	"Controlla Aggiornamenti"
+#define txt_send		"Invia"
+#define txt_send_ir		"Via IR"
+#define txt_send_bt		"Via Bluetooth"
+#define txt_status		"Stato:"
+#define txt_code		"Codice Ghost:"
+
+#define txt_active		"Attivo"
+#define txt_inactive		"Non Attivo"
+#define txt_onsimchange		"On Sim Change"
+#define txt_auto		"Auto"
+
+#define txt_settings_status_label	"Stato:"
+#define txt_create_profile	"Create New Profile"
+#define txt_current_profile	"Current Profile"
+#define txt_demo		"Versione TRIAL"
+#define txt_buy_full		"Acquista la versione FULL"
+#define txt_register		"Registra"
+#define txt_insert_code		"Inserisci Codice..."
+
+#define txt_hidden_apps 	"Icone Nascoste"

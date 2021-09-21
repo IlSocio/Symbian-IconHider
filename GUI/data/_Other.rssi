@@ -1,0 +1,145 @@
+
+#include "Other.loc"
+
+//RESOURCE TBUF r_http_buy { buf="http://www.Fuzzy-Byte.com/buy.aspx?"; }
+
+RESOURCE ARRAY r_register_popup
+    {
+    items =
+        {
+        LBUF { txt = txt_register_op_net; },
+        LBUF { txt = txt_register_op_code; }
+		};
+    }
+
+
+RESOURCE ARRAY r_send_popup
+    {
+    items =
+        {
+        LBUF { txt = txt_send_ir; },
+        LBUF { txt = txt_send_bt; }
+		};
+    }
+
+
+RESOURCE DIALOG r_register_dialog
+{
+	flags = EGeneralQueryFlags;
+	buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+	items =
+	{
+	DLG_LINE
+		{
+		type = EAknCtQuery;
+		id = EGeneralQuery;
+		control = AVKON_DATA_QUERY
+			{
+			layout = EDataLayout;
+            		label = txt_reg_code;
+
+			control = EDWIN
+				{
+                    		flags = EEikEdwinNoHorizScrolling | EEikEdwinResizable;
+       	            		width = 10;
+               	    		lines = 1;
+           	      		maxlength = 8;
+           	     		default_case = EAknEditorLowerCase;
+				};
+			};
+		}
+	};
+}
+
+
+
+
+RESOURCE DIALOG r_register_net_dialog
+    {
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtMultilineQuery;
+            id = EMultilineFirstLine;
+            control = AVKON_DATA_QUERY
+                {
+                layout = EMultiDataFirstEdwin;
+                label = txt_prod_1;
+                control = EDWIN
+                    {
+                    flags = EEikEdwinNoHorizScrolling | EEikEdwinResizable;
+                    width = 8;
+                    lines = 1;
+                    maxlength = 8;
+                    default_case = EAknEditorUpperCase;
+                    allowed_case_modes = EAknEditorUpperCase;
+                    };
+                };
+            },
+        DLG_LINE
+            {
+            type = EAknCtMultilineQuery;
+            id = EMultilineSecondLine;
+            control = AVKON_DATA_QUERY
+                {
+                label = txt_prod_2;
+                layout = EMultiDataSecondEdwin;
+                control = EDWIN
+                    {
+                    flags = EEikEdwinNoHorizScrolling | EEikEdwinResizable;
+                    width = 8;
+                    lines = 1;
+                    maxlength = 8;
+                    default_case = EAknEditorUpperCase;
+                    allowed_case_modes = EAknEditorUpperCase;
+                    }; 
+                };
+            }
+        };
+    }
+
+
+RESOURCE DIALOG r_wait_dialog
+    {
+    flags = EAknProgressNoteFlags;
+    buttons = R_AVKON_SOFTKEYS_CANCEL;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtNote;
+            id = EGeneralNote;
+            control = AVKON_NOTE
+                {
+//                layout = EProgressLayout;
+                layout = EWaitLayout;
+                singular_label = txt_inprogress;
+                animation      = R_QGN_GRAF_WAIT_BAR_ANIM;
+                // "In Progress\nPlease Wait...";
+                };
+            }
+        };
+    }
+
+
+RESOURCE TBUF r_empty { buf=""; }
+RESOURCE TBUF r_web_name { buf="Fuzzy-Byte"; }
+RESOURCE TBUF r_down_completed { buf=txt_down_completed; }
+RESOURCE TBUF r_no_update  { buf=txt_no_update; }
+RESOURCE TBUF r_confirm_update  { buf=txt_confirm_update; }
+
+RESOURCE TBUF r_ok_code { buf=txt_ok_code; }
+RESOURCE TBUF r_err_code { buf=txt_err_code; }
+
+// ERRORI LICENZA
+RESOURCE TBUF r_err_licnotfound {buf=txt_err_licnotfound; }
+RESOURCE TBUF r_err_licdifimei {buf=txt_err_licdifimei; }
+RESOURCE TBUF r_err_licbanned {buf=txt_err_licbanned; }
+RESOURCE TBUF r_err_licunkdata {buf=txt_err_licunkdata; }
+RESOURCE TBUF r_err_lictransmis {buf=txt_err_lictransmis; }
+RESOURCE TBUF r_err_licgeneral {buf=txt_err_licgeneral; }
+
+RESOURCE TBUF r_err_unavailinfree {buf=txt_err_unavailinfree; }

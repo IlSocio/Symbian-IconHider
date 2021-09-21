@@ -1,0 +1,54 @@
+LANG			01 05
+
+TARGET			IconHider_20024264.exe
+UID 0x100039CE 0x20024264
+VENDORID	  	  0
+TARGETTYPE		exe
+EPOCSTACKSIZE	 0x10000
+
+SYSTEMINCLUDE \epoc32\include \epoc32\include\variant \epoc32\include\ecom
+USERINCLUDE	   ..\inc ..\data
+
+
+SOURCEPATH		..\data
+START RESOURCE 20024264.rss 
+  TARGETPATH  \private\101f875a\import 
+  HEADER                                   
+END  
+
+SOURCEPATH		..\data
+START RESOURCE	IconHider_20024264.rss
+HEADER
+TARGETPATH resource\apps
+END //RESOURCE
+
+
+START RESOURCE	IconHider_Reg_20024264.rss
+TARGETPATH 	  \private\10003a3f\apps
+END //RESOURCE
+
+LIBRARY	CentralRepository.lib platformenv.lib
+LIBRARY			euser.lib apparc.lib cone.lib eikcore.lib avkon.lib commdb.lib bitgdi.lib
+LIBRARY			commonengine.lib efsrv.lib estor.lib eikcoctl.lib eikdlg.lib 
+LIBRARY			eikctl.lib bafl.lib fbscli.lib aknnotify.lib aknicon.lib apgrfx.lib
+LIBRARY			etext.lib gdi.lib egul.lib insock.lib msgs.lib apmime.lib FeatDiscovery.lib 
+LIBRARY			ecom.lib InetProtUtil.lib http.lib esock.lib charconv.lib ws32.lib flogger.lib
+LIBRARY         form.lib uiklaf.lib aknskins.lib aknskinsrv.lib aknswallpaperutils.lib centralrepository.lib CommonDialogs.lib etel3rdparty.lib hal.lib browserlauncher.lib 
+LIBRARY 		sdpagent.lib sdpdatabase.lib bluetooth.lib btextnotifiers.lib irobex.lib irda.lib ezip.lib
+
+
+SOURCEPATH		..\src
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+
+SOURCE ProtectionContainer.cpp ProtectionView.cpp MainAppUi.cpp MainApplication.cpp MainDocument.cpp SettingsView.cpp SettingsListboxContainer.cpp 
+
+CAPABILITY LocalServices NetworkServices ReadDeviceData ReadUserData WriteDeviceData WriteUserData
+
+//MACRO _LOGGING
+STATICLIBRARY commonlib.lib
+STATICLIBRARY IconHiderClient.lib
+
+

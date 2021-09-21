@@ -1,0 +1,37 @@
+// t-server.mmp
+target                                  IconHiderSrv_2005E763.exe 
+targettype                              exe 
+uid                                     0 0x2005E763
+capability                              PowerMgmt ReadDeviceData ReadUserData WriteDeviceData WriteUserData
+
+APP_LAYER_SYSTEMINCLUDE
+
+EPOCSTACKSIZE	0x5000  
+EPOCHEAPSIZE	0x1000 0x400000
+
+USERINCLUDE                             ..\inc 
+USERINCLUDE                             . 
+SYSTEMINCLUDE                           .  
+SYSTEMINCLUDE                           \epoc32\include 
+SOURCEPATH                              ..\src 
+SOURCE                                  session.cpp 
+SOURCE                                  server.cpp
+SOURCE                                  BASE64.CPP Data.cpp ProfileData.cpp 
+
+LIBRARY                                 bafl.lib 
+LIBRARY                                 etel3rdparty.lib 
+LIBRARY                                 estor.lib 
+LIBRARY                                 efsrv.lib 
+library                                 euser.lib
+LIBRARY	charconv.lib efsrv.lib bafl.lib euser.lib apgrfx.lib apmime.lib
+LIBRARY	CentralRepository.lib platformenv.lib
+LIBRARY cryptography.lib pbe.lib 
+
+
+vendorid                                0 
+
+MACRO                         _LOGGING 
+
+LIBRARY ws32.lib apgrfx.lib apmime.lib  
+
+STATICLIBRARY commonlib.lib

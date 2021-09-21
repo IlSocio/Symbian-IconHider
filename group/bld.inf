@@ -1,0 +1,5 @@
+#include <..\Autostart\group\bld.inf>
+#include <..\Install\group\bld.inf>
+#include <..\AutoConsole\group\bld.inf>
+#include <..\GUI\group\bld.inf>
+#include <..\Server\group\bld.inf>

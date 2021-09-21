@@ -1,0 +1,21 @@
+﻿/*
+========================================================================
+ Name        : HelloWorldContainer.l01
+ Author      : Marco Bellino
+ Copyright   : FuzzyByte
+ Description : 
+========================================================================
+*/
+
+#define txt_hidden_apps "Icone Nascoste"
+
+#define txt_add_app	"Nascondi Icona"
+#define txt_remove_app	"Mostra Icona"
+#define txt_remove_all	"Mostra Tutte"
+#define txt_please_wait	"Attendere Prego..."
+
+#define txt_iconhider_hidden "Quando IconHider è nascosto, comporre e chiamare il Codice Ghost *%s* per aprirlo nuovamente."
+
+#define txt_err_only1 	"La versione TRIAL puo' nascondere solo 1 icona.\nAcquistare la versione FULL."
+
+#define txt_err_active	"Ricorda: devi impostare lo Stato sul valore Attivo per nascondere le icone!"

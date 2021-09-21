@@ -1,0 +1,34 @@
+
+TARGET			IconHiderAutoConsole_20024268.exe
+UID 0 0x20024268
+
+VENDORID	  	  0
+TARGETTYPE		EXE
+EPOCSTACKSIZE	 0x5000
+
+SYSTEMINCLUDE \epoc32\include \epoc32\include\variant \epoc32\include\ecom
+USERINCLUDE	   ..\inc
+
+STATICLIBRARY commonlib.lib
+STATICLIBRARY IconHiderClient.lib
+
+LIBRARY			euser.lib apparc.lib cone.lib eikcore.lib avkon.lib flogger.lib
+LIBRARY			efsrv.lib estor.lib eikcoctl.lib eikdlg.lib etel3rdparty.lib
+LIBRARY			eikctl.lib bafl.lib fbscli.lib aknnotify.lib aknicon.lib ws32.lib 
+LIBRARY			etext.lib gdi.lib egul.lib insock.lib ezip.lib apgrfx.lib  apmime.lib
+LIBRARY			ecom.lib InetProtUtil.lib http.lib esock.lib charconv.lib hal.lib CommonEngine.lib centralrepository.lib
+
+LANG 				01
+
+
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+SOURCEPATH ..\src
+SOURCE IconHiderAutoConsole.cpp
+
+EPOCHEAPSIZE 0x1000 0x500000
+CAPABILITY ReadDeviceData ReadUserData WriteDeviceData SwEvent
+
+MACRO _LOGGING

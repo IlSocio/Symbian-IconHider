@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?>
+
+<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule buildFromInf="true" buildingTestComps="false" cleanLevel="2" concurrentBuildJobs="4" defaultMMPChangedAction="2" extraSBSv2Args="" infBuildComponents="" infFileLocation="group\bld.inf" macrosFile="" makeEngineToUse="make" manageDependencies="true" moduleId="com.nokia.carbide.cdt.builder.carbideCPPBuilder" overrideMakeEngine="false" overrideWorkspaceSettings="false" promptForMMPChangedAction="true" useConcurrentBuilding="true" useDebugMode="false" useIncrementalBuilder="false" useKeepGoing="false" useMMPMacros="true"/>
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="Phone Debug (GCCE) [S60_3rd_MR]">
+			<storageModule buildSystemId="com.nokia.carbide.cdt.builder.CarbideConfigurationDataProvider" id="Phone Debug (GCCE) [S60_3rd_MR]" moduleId="org.eclipse.cdt.core.settings" name="Phone Debug (GCCE) [S60_3rd_MR]">
+<externalSettings/>
+<extensions>
+<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="org.eclipse.cdt.core.PE" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="com.nokia.cdt.debug.cw.symbian.SymbianE32" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="com.nokia.carbide.cdt.builder.MakmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.CarbideMakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.SBSv2ErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.Elf2E32ErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.RCOMPErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.GCCECompilerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.MakeDefErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.GCCEAssemblerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.GCCELinkerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+</extensions>
+</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+			<storageModule moduleId="CarbideConfigurationDataProvider">
+<SIS_BUILDER_DATA_ID CERTIFICATESTORAGE="C:\ProgettiInCorso\Symbian\developercertificate.cer" CREATESTUBSTORAGE="false" ENABLEDSTORAGE="true" KEYSTORAGE="C:\ProgettiInCorso\Symbian\developercertificate.key" PARTIALUPGRADESTORAGE="false" PKGFILESTORAGE="GUI\sis\IconHider.pkg" SIGNINGTYPESTORAGE="2"/>
+<ENV_VAR_DATA_ID/>
+<ARGUMENTS_DATA_ID ABLDFREEZEARGSSTORAGE="-r"/>
+<ROM_BUILDER_DATA_ID ROMBUILDWORKINGDIRECTORYSTORAGE="C:\"/>
+</storageModule>
+			<storageModule filesCache="C:\ProgettiInCorso\Symbian\IconHider\GUI\group\bld.inf;C:\ProgettiInCorso\Symbian\IconHider\Server\group\bld.inf;C:\ProgettiInCorso\Symbian\IconHider\Install\group\IconHiderUninstall.mmp;C:\ProgettiInCorso\Symbian\IconHider\AutoConsole\group\bld.inf;C:\ProgettiInCorso\Symbian\IconHider\Install\group\IconHiderInstall.mmp;C:\ProgettiInCorso\Symbian\IconHider\Install\group\bld.inf;C:\ProgettiInCorso\Symbian\IconHider\Autostart\group\bld.inf;C:\ProgettiInCorso\Symbian\IconHider\group\bld.inf;C:\ProgettiInCorso\Symbian\IconHider\Server\group\server.mmp;C:\ProgettiInCorso\Symbian\IconHider\Server\group\client.mmp;C:\ProgettiInCorso\Symbian\IconHider\Autostart\group\IconHiderAuto.mmp;C:\ProgettiInCorso\Symbian\IconHider\GUI\group\IconHider.mmp;C:\ProgettiInCorso\Symbian\IconHider\AutoConsole\group\IconHiderAutoConsole.mmp;" includesCache="C:/ProgettiInCorso/Symbian/IconHider/Autostart/inc[LOCAL];C:/ProgettiInCorso/Symbian/IconHider/Install/inc[LOCAL];C:/ProgettiInCorso/Symbian/IconHider/AutoConsole/inc[LOCAL];C:/ProgettiInCorso/Symbian/IconHider/GUI/inc[LOCAL];C:/ProgettiInCorso/Symbian/IconHider/GUI/data[LOCAL];C:/ProgettiInCorso/Symbian/IconHider/Server/inc[LOCAL];C:/ProgettiInCorso/Symbian/IconHider/Server/group[LOCAL];C:/Symbian/9.1/S60_3rd_MR/Epoc32/include;C:/Symbian/9.1/S60_3rd_MR/Epoc32/include/variant;C:/Symbian/9.1/S60_3rd_MR/Epoc32/include/ecom;C:/ProgettiInCorso/Symbian/IconHider/Server/group;" macrosCache="_UNICODE;__SERIES60_30__;__SUPPORT_CPP_EXCEPTIONS__;__MARM_ARMV5__;__SYMBIAN32__;__GCCE__;__MARM__;_LOGGING;__SERIES60_3X__;__GENERIC_MARM__;__EPOC32__;__EABI__;_DEBUG;" moduleId="configDataCache" sourcesCache="/IconHider/AutoConsole/inc;/IconHider/AutoConsole/src;/IconHider/Autostart/inc;/IconHider/Autostart/src;/IconHider/GUI/data;/IconHider/GUI/inc;/IconHider/GUI/src;/IconHider/Install/inc;/IconHider/Install/src;/IconHider/Server/group;/IconHider/Server/inc;/IconHider/Server/src;" timestampCache="1329502388457" useMmpMacrosCache="true"/>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="Phone Release (GCCE) [S60_3rd_MR]">
+			<storageModule buildSystemId="com.nokia.carbide.cdt.builder.CarbideConfigurationDataProvider" id="Phone Release (GCCE) [S60_3rd_MR]" moduleId="org.eclipse.cdt.core.settings" name="Phone Release (GCCE) [S60_3rd_MR]">
+<externalSettings/>
+<extensions>
+<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="org.eclipse.cdt.core.PE" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="com.nokia.cdt.debug.cw.symbian.SymbianE32" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="com.nokia.carbide.cdt.builder.MakmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.CarbideMakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.SBSv2ErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.Elf2E32ErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.RCOMPErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.GCCECompilerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.MakeDefErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.GCCEAssemblerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.GCCELinkerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+</extensions>
+</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+			<storageModule moduleId="CarbideConfigurationDataProvider">
+<SIS_BUILDER_DATA_ID CERTIFICATESTORAGE="C:\ProgettiInCorso\Symbian\RDA_certificate.der" CREATESTUBSTORAGE="false" ENABLEDSTORAGE="true" KEYSTORAGE="C:\ProgettiInCorso\Symbian\RDA_private-key.pem" OUTPUTFILENAMESTORAGE="IconHider_RDA.sis" PARTIALUPGRADESTORAGE="false" PKGFILESTORAGE="GUI\sis\IconHider.pkg" SIGNEDSISFILENAMESTORAGE="IconHider_RDA.sisx" SIGNINGTYPESTORAGE="2"/>
+<SIS_BUILDER_DATA_ID CERTIFICATESTORAGE="C:\ProgettiInCorso\Symbian\developercertificate.cer" CREATESTUBSTORAGE="false" ENABLEDSTORAGE="true" KEYSTORAGE="C:\ProgettiInCorso\Symbian\developercertificate.key" PARTIALUPGRADESTORAGE="false" PKGFILESTORAGE="GUI\sis\IconHider.pkg" SIGNINGTYPESTORAGE="2"/>
+<ENV_VAR_DATA_ID/>
+<ARGUMENTS_DATA_ID ABLDFREEZEARGSSTORAGE="-r"/>
+<ROM_BUILDER_DATA_ID ROMBUILDWORKINGDIRECTORYSTORAGE="C:\"/>
+</storageModule>
+			<storageModule filesCache="C:\ProgettiInCorso\Symbian\IconHider\GUI\group\bld.inf;C:\ProgettiInCorso\Symbian\IconHider\Server\group\bld.inf;C:\ProgettiInCorso\Symbian\IconHider\Install\group\IconHiderUninstall.mmp;C:\ProgettiInCorso\Symbian\IconHider\AutoConsole\group\bld.inf;C:\ProgettiInCorso\Symbian\IconHider\Install\group\IconHiderInstall.mmp;C:\ProgettiInCorso\Symbian\IconHider\Install\group\bld.inf;C:\ProgettiInCorso\Symbian\IconHider\Autostart\group\bld.inf;C:\ProgettiInCorso\Symbian\IconHider\group\bld.inf;C:\ProgettiInCorso\Symbian\IconHider\Server\group\server.mmp;C:\ProgettiInCorso\Symbian\IconHider\Server\group\client.mmp;C:\ProgettiInCorso\Symbian\IconHider\Autostart\group\IconHiderAuto.mmp;C:\ProgettiInCorso\Symbian\IconHider\GUI\group\IconHider.mmp;C:\ProgettiInCorso\Symbian\IconHider\AutoConsole\group\IconHiderAutoConsole.mmp;" includesCache="C:/ProgettiInCorso/Symbian/IconHider/Autostart/inc[LOCAL];C:/ProgettiInCorso/Symbian/IconHider/Install/inc[LOCAL];C:/ProgettiInCorso/Symbian/IconHider/AutoConsole/inc[LOCAL];C:/ProgettiInCorso/Symbian/IconHider/GUI/inc[LOCAL];C:/ProgettiInCorso/Symbian/IconHider/GUI/data[LOCAL];C:/ProgettiInCorso/Symbian/IconHider/Server/inc[LOCAL];C:/ProgettiInCorso/Symbian/IconHider/Server/group[LOCAL];C:/Symbian/9.1/S60_3rd_MR/Epoc32/include;C:/Symbian/9.1/S60_3rd_MR/Epoc32/include/variant;C:/Symbian/9.1/S60_3rd_MR/Epoc32/include/ecom;C:/ProgettiInCorso/Symbian/IconHider/Server/group;" macrosCache="_UNICODE;__SERIES60_30__;__SUPPORT_CPP_EXCEPTIONS__;__MARM_ARMV5__;NDEBUG;__SYMBIAN32__;__GCCE__;__MARM__;_LOGGING;__SERIES60_3X__;__GENERIC_MARM__;__EPOC32__;__EABI__;" moduleId="configDataCache" sourcesCache="/IconHider/AutoConsole/inc;/IconHider/AutoConsole/src;/IconHider/Autostart/inc;/IconHider/Autostart/src;/IconHider/GUI/data;/IconHider/GUI/inc;/IconHider/GUI/src;/IconHider/Install/inc;/IconHider/Install/src;/IconHider/Server/group;/IconHider/Server/inc;/IconHider/Server/src;" timestampCache="1329502388488" useMmpMacrosCache="true"/>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="Phone Debug (GCCE) [S60_5th_Edition_SDK_v1.0]">
+			<storageModule buildSystemId="com.nokia.carbide.cdt.builder.CarbideConfigurationDataProvider" id="Phone Debug (GCCE) [S60_5th_Edition_SDK_v1.0]" moduleId="org.eclipse.cdt.core.settings" name="Phone Debug (GCCE) [S60_5th_Edition_SDK_v1.0]">
+<externalSettings/>
+<extensions>
+<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="org.eclipse.cdt.core.PE" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="com.nokia.cdt.debug.cw.symbian.SymbianE32" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="com.nokia.carbide.cdt.builder.MakmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.CarbideMakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.SBSv2ErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.Elf2E32ErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.RCOMPErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.GCCECompilerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.MakeDefErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.GCCEAssemblerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.GCCELinkerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+</extensions>
+</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+			<storageModule moduleId="CarbideConfigurationDataProvider">
+<SIS_BUILDER_DATA_ID CERTIFICATESTORAGE="C:\ProgettiInCorso\Symbian\developercertificate.cer" CREATESTUBSTORAGE="false" ENABLEDSTORAGE="true" KEYSTORAGE="C:\ProgettiInCorso\Symbian\developercertificate.key" PARTIALUPGRADESTORAGE="false" PKGFILESTORAGE="GUI\sis\IconHider.pkg" SIGNINGTYPESTORAGE="2"/>
+<ENV_VAR_DATA_ID/>
+<ARGUMENTS_DATA_ID ABLDFREEZEARGSSTORAGE="-r"/>
+<ROM_BUILDER_DATA_ID ROMBUILDWORKINGDIRECTORYSTORAGE="C:\"/>
+</storageModule>
+			<storageModule filesCache="C:\ProgettiInCorso\Symbian\IconHider\GUI\group\bld.inf;C:\ProgettiInCorso\Symbian\IconHider\Server\group\bld.inf;C:\ProgettiInCorso\Symbian\IconHider\Install\group\IconHiderUninstall.mmp;C:\ProgettiInCorso\Symbian\IconHider\AutoConsole\group\bld.inf;C:\ProgettiInCorso\Symbian\IconHider\Install\group\IconHiderInstall.mmp;C:\ProgettiInCorso\Symbian\IconHider\Install\group\bld.inf;C:\ProgettiInCorso\Symbian\IconHider\Autostart\group\bld.inf;C:\ProgettiInCorso\Symbian\IconHider\group\bld.inf;C:\ProgettiInCorso\Symbian\IconHider\Server\group\server.mmp;C:\ProgettiInCorso\Symbian\IconHider\Server\group\client.mmp;C:\ProgettiInCorso\Symbian\IconHider\Autostart\group\IconHiderAuto.mmp;C:\ProgettiInCorso\Symbian\IconHider\GUI\group\IconHider.mmp;C:\ProgettiInCorso\Symbian\IconHider\AutoConsole\group\IconHiderAutoConsole.mmp;" includesCache="C:/ProgettiInCorso/Symbian/IconHider/Autostart/inc[LOCAL];C:/ProgettiInCorso/Symbian/IconHider/Install/inc[LOCAL];C:/ProgettiInCorso/Symbian/IconHider/AutoConsole/inc[LOCAL];C:/ProgettiInCorso/Symbian/IconHider/GUI/inc[LOCAL];C:/ProgettiInCorso/Symbian/IconHider/GUI/data[LOCAL];C:/ProgettiInCorso/Symbian/IconHider/Server/inc[LOCAL];C:/ProgettiInCorso/Symbian/IconHider/Server/group[LOCAL];C:/S60/devices/S60_5th_Edition_SDK_v1.0/epoc32/include;C:/S60/devices/S60_5th_Edition_SDK_v1.0/epoc32/include/variant;C:/S60/devices/S60_5th_Edition_SDK_v1.0/epoc32/include/ecom;C:/ProgettiInCorso/Symbian/IconHider/Server/group;" macrosCache="_UNICODE;__SUPPORT_CPP_EXCEPTIONS__;__MARM_ARMV5__;__SYMBIAN32__;__GCCE__;__MARM__;_LOGGING;__SERIES60_3X__;__S60_3X__;__S60_5X__;__EPOC32__;__GENERIC_MARM__;__EABI__;_DEBUG;__S60_50__;" moduleId="configDataCache" sourcesCache="/IconHider/AutoConsole/inc;/IconHider/AutoConsole/src;/IconHider/Autostart/inc;/IconHider/Autostart/src;/IconHider/GUI/data;/IconHider/GUI/inc;/IconHider/GUI/src;/IconHider/Install/inc;/IconHider/Install/src;/IconHider/Server/group;/IconHider/Server/inc;/IconHider/Server/src;" timestampCache="1329502388516" useMmpMacrosCache="true"/>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+</cproject>

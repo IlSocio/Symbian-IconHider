@@ -1,0 +1,23 @@
+/*
+========================================================================
+ Name        : IconHider.loc
+ Author      : 
+ Copyright   : Your copyright notice
+ Description : 
+========================================================================
+*/
+#ifdef LANGUAGE_01
+#include "Main.l01"
+#endif
+#ifdef LANGUAGE_02
+#include "Main.l02"
+#endif
+#ifdef LANGUAGE_03
+#include "Main.l03"
+#endif
+#ifdef LANGUAGE_04
+#include "Main.l04"
+#endif
+#ifdef LANGUAGE_05
+#include "Main.l05"
+#endif

@@ -1,0 +1,273 @@
+
+CHARACTER_SET UTF8
+
+/*
+========================================================================
+ Name        : IconHider.rss
+ Author      : 
+ Copyright   : Your copyright notice
+ Description : 
+========================================================================
+*/
+NAME ICON
+
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <eikon.rh>
+#include <appinfo.rh>
+#include "Main.hrh"
+#include "Main.loc"
+
+RESOURCE RSS_SIGNATURE
+	{ 
+	}
+RESOURCE TBUF
+	{
+	buf = "IconHider";
+	}
+RESOURCE EIK_APP_INFO r_application_ui
+	{
+	cba = R_AVKON_SOFTKEYS_OPTIONS_EXIT;
+	status_pane = r_application_status_pane;
+	}
+
+RESOURCE LOCALISABLE_APP_INFO r_localisable_app_info
+	{
+	short_caption = "IconHider";
+	caption_and_icon = CAPTION_AND_ICON_INFO
+		{
+		caption = "IconHider";
+		number_of_icons = 1;
+		icon_file = "\\resource\\apps\\IconHider_aif_20024264.mif";
+		};
+	}
+
+
+// STARTS APPLICATION RESOURCES
+RESOURCE STATUS_PANE_APP_MODEL r_application_status_pane
+	{
+	panes =
+			{
+			SPANE_PANE
+				{
+				id = EEikStatusPaneUidNavi;
+				type = EAknCtNaviPane;
+				resource = r_application_navi_tabs_resource;
+				}
+			};
+	}
+
+RESOURCE NAVI_DECORATOR r_application_navi_tabs_resource
+	{
+	type = ENaviDecoratorControlTabGroup;
+	control = TAB_GROUP
+		{
+		tab_width = EAknTabWidthWithTwoTabs;
+//		tab_width = EAknTabWidthWithThreeTabs;  // tree tabs
+		//tab_width = EAknTabWidthWithFourTabs;
+		active = 0;
+		tabs =
+			{
+			TAB
+				{
+				id = ESettingsViewId;
+				txt = txt_tab1;
+				}
+			/*,
+			TAB
+				{
+				id = EProtectionViewId;
+				txt = txt_tab2;
+				}*/
+			};
+		};
+	}
+
+RESOURCE MENU_PANE r_common_menu
+	{
+	items =
+		{ 
+		MENU_ITEM { command = EBuyFull; txt = txt_buy; },
+		MENU_ITEM { command = ERegister; cascade = r_register_cascade; txt = txt_register; },
+		MENU_ITEM { command = EAbout; txt = txt_about; }
+//		MENU_ITEM { command = EHelp; txt = txt_help; }
+		};
+	}
+
+
+RESOURCE MENU_PANE r_register_cascade 
+    {
+    items=
+        {
+        MENU_ITEM { command=ERegisterNet;  txt=txt_register_op_net; },
+        MENU_ITEM { command=ERegisterCode; txt=txt_register_op_code; }
+        };
+    }
+
+
+
+//RESOURCE TBUF r_http_buy { buf="http://www.Fuzzy-Byte.com/buy.aspx?"; }
+
+RESOURCE ARRAY r_register_popup
+    {
+    items =
+        {
+        LBUF { txt = txt_register_op_net; },
+        LBUF { txt = txt_register_op_code; }
+	};
+    }
+
+
+
+RESOURCE DIALOG r_register_dialog
+{
+	flags = EGeneralQueryFlags;
+	buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+	items =
+	{
+	DLG_LINE
+		{
+		type = EAknCtQuery;
+		id = EGeneralQuery;
+		control = AVKON_DATA_QUERY
+			{
+			layout = EDataLayout;
+            		label = txt_reg_code;
+
+			control = EDWIN
+				{
+                    		flags = EEikEdwinNoHorizScrolling | EEikEdwinResizable;
+       	            		width = 10;
+               	    		lines = 1;
+           	      		maxlength = 8;
+           	     		default_case = EAknEditorLowerCase;
+				};
+			};
+		}
+	};
+}
+
+
+
+
+RESOURCE DIALOG r_register_net_dialog
+    {
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtMultilineQuery;
+            id = EMultilineFirstLine;
+            control = AVKON_DATA_QUERY
+                {
+                layout = EMultiDataFirstEdwin;
+                label = txt_prod_1;
+                control = EDWIN
+                    {
+                    flags = EEikEdwinNoHorizScrolling | EEikEdwinResizable;
+                    width = 8;
+                    lines = 1;
+                    maxlength = 8;
+                    default_case = EAknEditorUpperCase;
+                    allowed_case_modes = EAknEditorUpperCase;
+                    };
+                };
+            },
+        DLG_LINE
+            {
+            type = EAknCtMultilineQuery;
+            id = EMultilineSecondLine;
+            control = AVKON_DATA_QUERY
+                {
+                label = txt_prod_2;
+                layout = EMultiDataSecondEdwin;
+                control = EDWIN
+                    {
+                    flags = EEikEdwinNoHorizScrolling | EEikEdwinResizable;
+                    width = 8;
+                    lines = 1;
+                    maxlength = 8;
+                    default_case = EAknEditorUpperCase;
+                    allowed_case_modes = EAknEditorUpperCase;
+                    }; 
+                };
+            }
+        };
+    }
+
+
+RESOURCE DIALOG r_wait_dialog
+    {
+    flags = EAknProgressNoteFlags;
+    buttons = R_AVKON_SOFTKEYS_CANCEL;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtNote;
+            id = EGeneralNote;
+            control = AVKON_NOTE
+                {
+//                layout = EProgressLayout;
+                layout = EWaitLayout;
+                singular_label = txt_inprogress;
+                animation      = R_QGN_GRAF_WAIT_BAR_ANIM;
+                // "In Progress\nPlease Wait...";
+                };
+            }
+        };
+    }
+
+
+RESOURCE DIALOG r_longtext_dialog {
+	flags = EAknDialogGenericQueryFlags;
+	buttons = R_AVKON_SOFTKEYS_OK_EMPTY;
+	items = {
+		DLG_LINE {
+			type = EAknCtPopupHeadingPane;
+			id = EAknMessageQueryHeaderId;
+			itemflags = EEikDlgItemNonFocusing;
+			control = AVKON_HEADING 
+				{
+				label = "header";
+				};
+		},
+		DLG_LINE {
+			type = EAknCtMessageQuery;
+			id = EAknMessageQueryContentId;
+			control = AVKON_MESSAGE_QUERY 
+				{
+				};
+		}
+	};
+}
+
+
+RESOURCE TBUF r_about_header { buf=txt_about_header; }
+RESOURCE TBUF r_empty { buf=""; }
+RESOURCE TBUF r_web_name { buf="Symbian-Toys.com"; }
+RESOURCE TBUF r_down_completed { buf=txt_down_completed; }
+RESOURCE TBUF r_no_update  { buf=txt_no_update; }
+RESOURCE TBUF r_confirm_update  { buf=txt_confirm_update; }
+
+RESOURCE TBUF r_ok_code { buf=txt_ok_code; }
+RESOURCE TBUF r_err_code { buf=txt_err_code; }
+
+// ERRORI LICENZA
+RESOURCE TBUF r_err_licnotfound {buf=txt_err_licnotfound; }
+RESOURCE TBUF r_err_licdifimei {buf=txt_err_licdifimei; }
+RESOURCE TBUF r_err_licbanned {buf=txt_err_licbanned; }
+RESOURCE TBUF r_err_licunkdata {buf=txt_err_licunkdata; }
+RESOURCE TBUF r_err_lictransmis {buf=txt_err_lictransmis; }
+RESOURCE TBUF r_err_licgeneral {buf=txt_err_licgeneral; }
+
+RESOURCE TBUF r_err_unavailinfree {buf=txt_err_unavailinfree; }
+
+
+
+//#include "About.rssi"
+#include "Settings.rssi"
+#include "Protection.rssi"
+//#include "Other.rssi"

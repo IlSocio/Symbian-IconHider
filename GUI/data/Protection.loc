@@ -1,0 +1,23 @@
+/*
+========================================================================
+ Name        : HelloWorld.loc
+ Author      : Marco Bellino
+ Copyright   : FuzzyByte
+ Description : 
+========================================================================
+*/
+#ifdef LANGUAGE_01
+#include "Protection.l01"
+#endif
+#ifdef LANGUAGE_02
+#include "Protection.l02"
+#endif
+#ifdef LANGUAGE_03
+#include "Protection.l03"
+#endif
+#ifdef LANGUAGE_04
+#include "Protection.l04"
+#endif
+#ifdef LANGUAGE_05
+#include "Protection.l05"
+#endif

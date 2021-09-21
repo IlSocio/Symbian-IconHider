@@ -1,0 +1,26 @@
+﻿/*
+========================================================================
+ Name        : HelloWorldContainer.l01
+ Author      : Marco Bellino
+ Copyright   : FuzzyByte
+ Description : 
+========================================================================
+*/
+// localized strings for language: UK English (01)
+
+#define txt_inprogress		""
+
+#define txt_down_completed 	""
+#define txt_no_update 		""
+#define txt_confirm_update 	""
+
+#define txt_ok_code		""
+#define txt_err_code		""
+#define txt_err_licnotfound	""
+#define txt_err_licdifimei	""
+#define txt_err_licbanned	""
+#define txt_err_licunkdata	""
+#define txt_err_lictransmis	""
+#define txt_err_licgeneral	""
+
+#define txt_err_unavailinfree	""

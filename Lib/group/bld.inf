@@ -1,0 +1,20 @@
+/*
+============================================================================
+ Name		: bld.inf
+ Author	  : Marco Bellino
+ Copyright   : Guardian-Mobile.com
+ Description : This file provides the information required for building the
+				whole of a CommonLib.
+============================================================================
+*/
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+..\inc\Data.h \epoc32\include\FuzzyByte\IconHider\Data.h
+..\inc\ProfileData.h \epoc32\include\FuzzyByte\IconHider\ProfileData.h
+..\inc\Data_consts_20024264.h \epoc32\include\FuzzyByte\IconHider\Data_consts_20024264.h
+
+PRJ_MMPFILES
+IconHiderLib.mmp

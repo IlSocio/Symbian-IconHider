@@ -1,0 +1,222 @@
+; GuardGUI.pkg
+;
+;Language - standard language definitions
+;&EN, FR, DE, ES, IT
+&01, 02, 03, 04, 05, 79 
+ 
+; standard SIS file header   
+#{"Guardian","Guardian","Guardian", "Guardian", "Guardian", "Guardian"},(0x200131CC),3,00,0000
+  
+;Localised Vendor name
+%{"FuzzyByte","FuzzyByte","FuzzyByte", "FuzzyByte", "FuzzyByte", "FuzzyByte"}
+  
+;Unique Vendor name                  
+:"FuzzyByte"         
+     
+;Supports 3rd    
+[0x101F7961], 0, 0, 0,{"Series60ProductID","Series60ProductID","Series60ProductID","Series60ProductID","Series60ProductID","Series60ProductID"}
+ 
+;Supports 3rd FP1 
+[0x102032BE], 0, 0, 0,{"Series60ProductID","Series60ProductID","Series60ProductID","Series60ProductID","Series60ProductID","Series60ProductID"}
+  
+;Supports 3rd FP2
+[0x102752AE], 0, 0, 0,{"Series60ProductID","Series60ProductID","Series60ProductID","Series60ProductID","Series60ProductID","Series60ProductID"}
+  
+;Supports 5th
+[0x1028315F], 0, 0, 0,{"Series60ProductID","Series60ProductID","Series60ProductID","Series60ProductID","Series60ProductID","Series60ProductID"}
+ 
+;Supports Symbian^3
+[0x20022E6D], 0, 0, 0,{"Series60ProductID","Series60ProductID","Series60ProductID","Series60ProductID","Series60ProductID","Series60ProductID"}
+    
+"backup_registration.xml.txt"-"c:\private\200107AB\backup_registration.xml"
+"backup_registration_add.xml.txt"-"c:\private\200131CC\backup_registration.xml"
+
+
+
+; SE SI USA UNINSTALL PER DISATTIVARE GUARDIAN ALLORA UN LADRO POTREBBE SOVRASCRIVERE GUARDIAN INSTALLANDOLO NUOVAMENTE ED ACCEDERE
+; Uninstall serve a cancellare i files di aggiornamento scaricati dal programma...
+"$(EPOCROOT)epoc32\release\gcce\$(TARGET)\Uninstall_200107b4.exe" - "c:\sys\bin\Uninstall_200107b4.exe", FILERUN, RR, RUNWAITEND
+"$(EPOCROOT)epoc32\release\gcce\$(TARGET)\Install_200107b2.exe"   - "c:\sys\bin\Install_200107b2.exe", FILERUN, RI, RUNWAITEND
+
+;"$(EPOCROOT)epoc32\release\gcce\$(TARGET)\Utils_200107AE.dll"   - "c:\sys\bin\Utils_200107AE.dll"
+
+; HLP => H01 H02 H05       
+{
+"..\help\GuardGUI.h01"          
+"..\help\GuardGUI.h02"
+"..\help\GuardGUI.h03"   
+"..\help\GuardGUI.h04"
+"..\help\GuardGUI.h05"
+"..\help\GuardGUI.h79"
+} - "c:\resource\help\GuardGUI_0x200131CC.hlp"
+ 
+      
+; NOTIFIER-EXTENDED PLUGIN
+;"$(EPOCROOT)epoc32\release\gcce\$(TARGET)\Notifier1.dll" 	- "c:\sys\bin\Notifier1.dll"
+;"$(EPOCROOT)Epoc32\data\z\resource\apps\Notifier1Dialog.rsc" - "c:\resource\apps\Notifier1Dialog.RSC"
+;"$(EPOCROOT)Epoc32\data\z\resource\plugins\Notifier1.rsc"	-	"c:\resource\plugins\Notifier1.RSC"
+
+; NOTIFIER-EXTENDED PLUGIN
+"$(EPOCROOT)epoc32\release\gcce\$(TARGET)\DialogPIN_200107B0.DLL" 	- "c:\sys\bin\DialogPIN_200107B0.DLL"
+{
+"$(EPOCROOT)Epoc32\data\z\resource\apps\DialogPIN_200107B1.r01"
+"$(EPOCROOT)Epoc32\data\z\resource\apps\DialogPIN_200107B1.r02"
+"$(EPOCROOT)Epoc32\data\z\resource\apps\DialogPIN_200107B1.r03"
+"$(EPOCROOT)Epoc32\data\z\resource\apps\DialogPIN_200107B1.r04"
+"$(EPOCROOT)Epoc32\data\z\resource\apps\DialogPIN_200107B1.r05"
+"$(EPOCROOT)Epoc32\data\z\resource\apps\DialogPIN_200107B1.r79"
+} - "c:\resource\apps\DialogPIN_200107B1.RSC"
+ 
+{
+"$(EPOCROOT)Epoc32\data\z\resource\apps\Plugins_200112DF.r01"
+"$(EPOCROOT)Epoc32\data\z\resource\apps\Plugins_200112DF.r02"
+"$(EPOCROOT)Epoc32\data\z\resource\apps\Plugins_200112DF.r03"
+"$(EPOCROOT)Epoc32\data\z\resource\apps\Plugins_200112DF.r04"
+"$(EPOCROOT)Epoc32\data\z\resource\apps\Plugins_200112DF.r05"
+"$(EPOCROOT)Epoc32\data\z\resource\apps\Plugins_200112DF.r79"
+} - "c:\resource\apps\Plugins_200112DF.rsc"
+"$(EPOCROOT)Epoc32\data\z\resource\plugins\DialogPIN_200107B0.R01"	-	"c:\resource\plugins\DialogPIN_200107B0.RSC"
+
+
+; PLUGIN DI DEFAULT
+"$(EPOCROOT)epoc32\release\gcce\$(TARGET)\DefPlugins_200112DF.DLL" 	- "c:\sys\bin\DefPlugins_200112DF.DLL"
+"$(EPOCROOT)Epoc32\data\z\resource\plugins\DefPlugins_200112DF.R01"	-	"c:\resource\plugins\DefPlugins_200112DF.RSC"
+
+
+; In Debug viene usato questo come path .mif ed .mbm  
+; $(EPOCROOT)Epoc32\release\winscw\udeb\z\resource\apps 
+
+"..\gfx\GuardGUI_200131CC.mif"               - "c:\resource\apps\GuardGUI_200131CC.mif"
+"..\gfx\GuardSvg_200131CC.mif"               - "c:\resource\apps\GuardSvg_200131CC.mif"
+"..\gfx\GuardSvg_200131CC.mbm"               - "c:\resource\apps\GuardSvg_200131CC.mbm"
+"$(EPOCROOT)epoc32\release\gcce\$(TARGET)\GuardSrv_200107AB.exe"					- "c:\sys\bin\GuardSrv_200107AB.exe"
+"$(EPOCROOT)epoc32\release\gcce\$(TARGET)\GuardCli_200107AC.dll"					- "c:\sys\bin\GuardCli_200107AC.dll"
+"$(EPOCROOT)epoc32\release\gcce\$(TARGET)\GuardAuto_200107AD.exe"					- "c:\sys\bin\GuardAuto_200107AD.exe"
+"$(EPOCROOT)Epoc32\data\z\private\101f875a\import\200131CC.R01"				- "c:\private\101f875a\import\[200131CC].rsc"
+
+
+; RISORSE PER L'AGGIUNTA AUTOMATICA DEGLI IAP
+"..\IapManagerData\204_12_telfort.rsc"	- "c:\private\200131CC\204_12\Internet Telfort.rsc"
+"..\IapManagerData\204_15_t-mobile.rsc"	- "c:\private\200131CC\204_15\Internet T-Mobile.rsc"
+"..\IapManagerData\204_4_voda.rsc"	- "c:\private\200131CC\204_4\Internet Vodafone.rsc"
+"..\IapManagerData\204_4_voda_business.rsc"	- "c:\private\200131CC\204_4\Internet Vodafone Business.rsc"
+"..\IapManagerData\204_8_KPN.rsc"	- "c:\private\200131CC\204_8\Internet KPN.rsc"
+"..\IapManagerData\206_10_mobistar.rsc"	- "c:\private\200131CC\206_10\Internet Mobistar.rsc"
+"..\IapManagerData\206_1_proximus.rsc"	- "c:\private\200131CC\206_1\Internet Proximus.rsc"
+"..\IapManagerData\206_20_orange.rsc"	- "c:\private\200131CC\206_20\Internet Orange.rsc"
+"..\IapManagerData\208_0_orange.rsc"	- "c:\private\200131CC\208_0\Internet Orange.rsc"
+"..\IapManagerData\208_10_sfr.rsc"	- "c:\private\200131CC\208_10\Internet SFR.rsc"
+"..\IapManagerData\208_20_bouyges.rsc"	- "c:\private\200131CC\208_20\Internet Bouyges.rsc"
+"..\IapManagerData\214_1_airtel.rsc"	- "c:\private\200131CC\214_1\Internet Airtel.rsc"
+"..\IapManagerData\214_3_amena.rsc"	- "c:\private\200131CC\214_3\Internet Amena.rsc"
+"..\IapManagerData\214_7_movistar.rsc"	- "c:\private\200131CC\214_7\Internet Movistar.rsc"
+"..\IapManagerData\222_10_poste.rsc"	- "c:\private\200131CC\222_10\Internet Postemobile.rsc"
+"..\IapManagerData\222_10_voda.rsc"	- "c:\private\200131CC\222_10\Internet Vodafone.rsc"
+"..\IapManagerData\222_1_tim.rsc"	- "c:\private\200131CC\222_1\Internet TIM.rsc"
+"..\IapManagerData\222_88_wind.rsc"	- "c:\private\200131CC\222_88\Internet Wind.rsc"
+"..\IapManagerData\222_99_tre.rsc"	- "c:\private\200131CC\222_99\Internet Tre.rsc"
+"..\IapManagerData\228_3_orange.rsc"	- "c:\private\200131CC\228_3\Internet Orange.rsc"
+"..\IapManagerData\234_11_o2_contract.rsc"	- "c:\private\200131CC\234_11\Internet O2.rsc"
+"..\IapManagerData\234_11_o2_prepay.rsc"	- "c:\private\200131CC\234_11\Internet O2 Prepay.rsc"
+"..\IapManagerData\234_15_voda_contract.rsc"	- "c:\private\200131CC\234_15\Internet Vodafone Contract.rsc"
+"..\IapManagerData\234_15_voda_prepay.rsc"	- "c:\private\200131CC\234_15\Internet Vodafone Prepay.rsc"
+"..\IapManagerData\234_32_t-mobile.rsc"	- "c:\private\200131CC\234_32\Internet T-Mobile.rsc"
+"..\IapManagerData\234_34_orange_payandgo.rsc"	- "c:\private\200131CC\234_34\Internet Orange PayAndGo.rsc"
+"..\IapManagerData\234_34_orange_paymontly.rsc"	- "c:\private\200131CC\234_34\Internet Orange PayMontly.rsc"
+"..\IapManagerData\234_50_jersey.rsc"	- "c:\private\200131CC\234_50\Internet Jersey.rsc"
+"..\IapManagerData\238_1_TDC.rsc"	- "c:\private\200131CC\238_1\Internet TDS.rsc"
+"..\IapManagerData\238_2_sonofon.rsc"	- "c:\private\200131CC\238_2\Internet Sonofon.rsc"
+"..\IapManagerData\238_6_3.rsc"	- "c:\private\200131CC\238_6\Internet 3.rsc"
+"..\IapManagerData\240_1_telia.rsc"	- "c:\private\200131CC\240_1\Internet Telia.rsc"
+"..\IapManagerData\240_2_Tre.rsc"	- "c:\private\200131CC\240_2\Internet Tre.rsc"
+"..\IapManagerData\240_6_telenor.rsc"	- "c:\private\200131CC\240_6\Internet Telenor.rsc"
+"..\IapManagerData\240_7_Comviq.rsc"	- "c:\private\200131CC\240_7\Internet Comviq.rsc"
+"..\IapManagerData\242_1_voda.rsc"	- "c:\private\200131CC\242_1\Internet Vodafone.rsc"
+"..\IapManagerData\242_2_netcom.rsc"	- "c:\private\200131CC\242_2\Internet Netcom.rsc"
+"..\IapManagerData\244_12_DNA.rsc"	- "c:\private\200131CC\244_12\Internet DNA.rsc"
+"..\IapManagerData\244_21_elisa.rsc"	- "c:\private\200131CC\244_21\Internet Elisa.rsc"
+"..\IapManagerData\244_21_saunalahti.rsc"	- "c:\private\200131CC\244_21\Internet Saunalahti.rsc"
+"..\IapManagerData\244_3_sonera.rsc"	- "c:\private\200131CC\244_3\Internet Sonera.rsc"
+"..\IapManagerData\262_1_t-mobile.rsc"	- "c:\private\200131CC\262_1\Internet T-Mobile.rsc"
+"..\IapManagerData\262_2_voda.rsc"	- "c:\private\200131CC\262_2\Internet Vodafone.rsc"
+"..\IapManagerData\262_3_e-plus.rsc"	- "c:\private\200131CC\262_3\Internet E-Plus.rsc"
+"..\IapManagerData\262_8_o2.rsc"	- "c:\private\200131CC\262_8\Internet O2.rsc"
+"..\IapManagerData\268_1_voda.rsc"	- "c:\private\200131CC\268_1\Internet Vodafone.rsc"
+"..\IapManagerData\268_3_optimus.rsc"	- "c:\private\200131CC\268_3\Internet Optimus.rsc"
+"..\IapManagerData\268_6_TMN.rsc"	- "c:\private\200131CC\268_6\Internet TMN.rsc"
+"..\IapManagerData\270_1_luxgsm.rsc"	- "c:\private\200131CC\270_1\Internet Luxgsm.rsc"
+"..\IapManagerData\270_77_tango.rsc"	- "c:\private\200131CC\270_77\Internet Tango.rsc"
+"..\IapManagerData\270_99_VOXmobile.rsc"	- "c:\private\200131CC\270_99\Internet Voxmobile.rsc"
+"..\IapManagerData\272_1_voda_contract.rsc"	- "c:\private\200131CC\272_1\Internet Vodafone Contract.rsc"
+"..\IapManagerData\272_1_voda_prepay.rsc"	- "c:\private\200131CC\272_1\Internet Vodafone Prepay.rsc"
+"..\IapManagerData\272_2_o2_contract.rsc"	- "c:\private\200131CC\272_2\Internet O2 Contract.rsc"
+"..\IapManagerData\272_2_o2_prepay.rsc"	- "c:\private\200131CC\272_2\Internet O2 Prepay.rsc"
+"..\IapManagerData\272_3_meteor.rsc"	- "c:\private\200131CC\272_3\Internet Meteor.rsc"
+"..\IapManagerData\302_370_fido.rsc"	- "c:\private\200131CC\302_370\Internet Fido.rsc"
+"..\IapManagerData\302_370_rogers.rsc"	- "c:\private\200131CC\302_370\Internet Rogers.rsc"
+"..\IapManagerData\370_1_orange.rsc"	- "c:\private\200131CC\370_1\Internet Orange.rsc"
+"..\IapManagerData\420_1_STC.rsc"	- "c:\private\200131CC\420_1\Internet STC.rsc"
+"..\IapManagerData\424_1_etisalat.rsc"	- "c:\private\200131CC\424_1\Internet Etisalat.rsc"
+"..\IapManagerData\530_1_voda.rsc"	- "c:\private\200131CC\530_1\Internet Vodafone.rsc"
+
+
+
+; RISORSE DA LOCALIZZARE NELLE VARIE LINGUE
+{
+"..\data\install.01.txt"
+"..\data\install.02.txt"
+"..\data\install.03.txt"
+"..\data\install.04.txt"
+"..\data\install.05.txt"
+"..\data\install.79.txt"
+} - "", FILETEXT, TEXTCONTINUE
+
+; RISORSE DA LOCALIZZARE NELLE VARIE LINGUE
+{
+"..\data\license.01.txt"
+"..\data\license.02.txt"
+"..\data\license.03.txt"
+"..\data\license.04.txt"
+"..\data\license.05.txt"
+"..\data\license.79.txt"
+} - "", FILETEXT, TEXTABORT
+
+; TXT Licenza e Messaggio "Add New Sim"
+{
+"..\data\addnewsim.01.txt"
+"..\data\addnewsim.02.txt"
+"..\data\addnewsim.03.txt"
+"..\data\addnewsim.04.txt"
+"..\data\addnewsim.05.txt"
+"..\data\addnewsim.79.txt"
+} - "c:\private\200131CC\addnewsim.txt"
+
+{
+"..\data\editions.01.txt"
+"..\data\editions.02.txt"
+"..\data\editions.03.txt"
+"..\data\editions.04.txt"
+"..\data\editions.05.txt"
+"..\data\editions.79.txt"
+} - "c:\private\200131CC\editions.txt"
+
+"$(EPOCROOT)epoc32\release\gcce\$(TARGET)\Guardian_200131CB.exe"					- "c:\sys\bin\Guardian_200131CB.exe", FILERUN, RI
+"$(EPOCROOT)epoc32\release\gcce\$(TARGET)\GuardGUI_200131CC.exe"					- "c:\sys\bin\GuardGUI_200131CC.exe"
+
+; RSC Stringhe della GUI
+{ 
+"$(EPOCROOT)epoc32\data\z\resource\apps\GuardGUI_200131CC.r01"
+"$(EPOCROOT)epoc32\data\z\resource\apps\GuardGUI_200131CC.r02"
+"$(EPOCROOT)epoc32\data\z\resource\apps\GuardGUI_200131CC.r03"
+"$(EPOCROOT)epoc32\data\z\resource\apps\GuardGUI_200131CC.r04" 
+"$(EPOCROOT)epoc32\data\z\resource\apps\GuardGUI_200131CC.r05"
+"$(EPOCROOT)epoc32\data\z\resource\apps\GuardGUI_200131CC.r79"
+} - "c:\resource\apps\GuardGUI_200131CC.rsc"
+
+"$(EPOCROOT)epoc32\data\z\private\10003a3f\apps\GuardGUI_200131CC_reg.r05"	- "c:\private\10003a3f\import\apps\GuardGUI_200131CC_reg.rsc"
+
+
+
+"..\data\license.01.txt"	- "c:\logs\Guardian\tmp.txt"
+"..\data\license.01.txt"	- "c:\resource\errrd\tmp.txt"
+

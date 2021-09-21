@@ -1,0 +1,7 @@
+﻿IconHider v1.3
+http://www.Symbian-Toys.com/
+
+Usando IconHider è possibile nascondere l'icona di qualsiasi applicazione dal menù.
+È anche possibile nascondere l'icona di IconHider stesso.
+Nascondendo l'icona di IconHider, per potervi accedere nuovamente, occorrerà comporre una chiamata indicando come numero il Codice Ghost *0000* che è stato configurato nel programma. 
+La chiamata verrà automaticamente interrotta e apparirà il pannello di configurazione di IconHider.

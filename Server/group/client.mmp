@@ -1,0 +1,28 @@
+// t-client.mmp
+target                                  IconHiderClient.lib 
+targettype                              lib
+
+APP_LAYER_SYSTEMINCLUDE  
+
+UID                                     0
+vendorid                                0 
+
+USERINCLUDE                             ..\inc 
+USERINCLUDE                             . 
+systeminclude                           .  
+systeminclude                           \epoc32\include 
+SOURCEPATH                              ..\src  
+source                                  client.cpp 
+
+//LIBRARY                                 flogger.lib 
+//LIBRARY                                 estor.lib efsrv.lib
+//LIBRARY                                 etel3rdparty.lib 
+//LIBRARY                                 bafl.lib 
+//LIBRARY                                 euser.lib  
+
+nostrictdef                              
+
+// MACRO					_LOGGING 
+
+
+ 

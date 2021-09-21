@@ -1,0 +1,7 @@
+#include <startupitem.rh>
+
+RESOURCE STARTUP_ITEM_INFO dispatcher
+	{
+	executable_name = "!:\\sys\\bin\\IconHiderAuto_20024265.exe";
+	recovery = EStartupItemExPolicyNone;
+	}

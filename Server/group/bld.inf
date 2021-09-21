@@ -1,0 +1,18 @@
+// bld.inf
+//
+// Copyright (c) 2000 Symbian Ltd.  All rights reserved.
+//
+
+PRJ_PLATFORMS
+gcce winscw
+
+PRJ_EXPORTS
+..\inc\client.h	\epoc32\include\FuzzyByte\IconHider\Client.h
+..\inc\Settings_consts.h \epoc32\include\FuzzyByte\IconHider\Settings_consts.h
+..\inc\Srverr.h \epoc32\include\FuzzyByte\IconHider\Srverr.h
+
+PRJ_MMPFILES
+server.mmp
+client.mmp
+
+PRJ_TESTMMPFILES

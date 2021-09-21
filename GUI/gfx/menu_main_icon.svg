@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generator: Ikivo Animator 2.2 (build 2.2.0.10) -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1 Tiny//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd">
+<svg baseProfile="tiny" display="inherit" height="48" id="svg2" version="1.1" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events">
+	<g display="inherit" id="g4">
+		<rect fill="none" height="48" id="rect6" width="48"/>
+	</g>
+	<defs display="inherit" id="defs4">
+		<linearGradient id="linearGradient3651">
+			<stop id="stop3653" offset="0" stop-color="#555555"/>
+			<stop id="stop3655" offset="1" stop-color="#000000"/>
+		</linearGradient>
+		<linearGradient id="linearGradient3637">
+			<stop id="stop3639" offset="0" stop-color="#ffffff"/>
+			<stop id="stop3641" offset="1" stop-color="#d5cdd1"/>
+		</linearGradient>
+		<linearGradient gradientUnits="userSpaceOnUse" id="SVGID_1_" x1="820.822" x2="820.822" y1="-1036.853" y2="-1115.992">
+			<stop id="stop6" offset="0" stop-color="#22ff06"/>
+			<stop id="stop8" offset="1" stop-color="#004800"/>
+		</linearGradient>
+		<linearGradient gradientUnits="userSpaceOnUse" id="linearGradient3792" x1="7.533" x2="34.926" y1="1017.475" y2="1034.93">
+			<stop id="stop11-1" offset="0" stop-color="#ffffff"/>
+			<stop id="stop13-7" offset="1" stop-color="#d5cdd1"/>
+		</linearGradient>
+	</defs>
+	<metadata id="metadata7"/>
+	<g display="inherit" id="layer1" transform="matrix(0.83,0,0,0.83,4.653,-829.939)">
+		<g id="g3" transform="matrix(0.528,0,0,0.528,-0.822,1003.471)">
+			<linearGradient gradientUnits="userSpaceOnUse" id="linearGradient3311" x1="820.822" x2="820.822" y1="-1036.853" y2="-1115.992">
+				<stop id="stop3313" offset="0" stop-color="#ffffff"/>
+				<stop id="stop3315" offset="1" stop-color="#9c9c9c"/>
+			</linearGradient>
+		</g>
+		<path color="#000000" d="M9.858,1043.444 C8.139,1042.193 15.855,1038.068 13.871,1023.376 C13.069,1019.363 17.885,1012.941 21.096,1012.138 C22.653,1011.748 29.123,1010.533 32.334,1014.546 C35.258,1018.201 36.747,1030.184 36.448,1032.574 C35.612,1039.263 40.629,1041.772 40.361,1045.05 C40.231,1046.65 37.953,1046.655 35.545,1045.05 C33.137,1043.444 29.658,1042.675 27.25,1044.281 C24.842,1045.886 21.614,1047.951 19.724,1045.117 C16.38,1040.1 13.595,1046.167 9.858,1043.444 Z" display="inline" fill="#000000" id="path3635-9" stroke="none" stroke-width="1" visibility="visible"/>
+		<path color="#000000" d="M7.983,1041.746 C6.264,1040.495 13.98,1036.37 11.996,1021.678 C11.194,1017.665 16.01,1011.243 19.221,1010.44 C20.778,1010.05 27.248,1008.835 30.459,1012.848 C33.383,1016.503 34.872,1028.486 34.573,1030.876 C33.737,1037.566 38.754,1040.074 38.486,1043.352 C38.356,1044.952 36.078,1044.957 33.67,1043.352 C31.262,1041.746 27.783,1040.977 25.375,1042.583 C22.967,1044.188 19.739,1046.253 17.85,1043.419 C14.505,1038.402 11.72,1044.469 7.983,1041.746 Z" display="inline" fill="url(#linearGradient3792)" id="path3635" stroke="none" stroke-width="1" visibility="visible"/>
+		<path d="M18.276,1022.3 C18.276,1024.33 17.581,1025.975 16.723,1025.975 C15.865,1025.975 15.169,1024.33 15.169,1022.3 C15.169,1020.269 15.865,1018.624 16.723,1018.624 C17.581,1018.624 18.276,1020.269 18.276,1022.3 Z" fill="#000000" fill-rule="evenodd" id="path3659" stroke="none"/>
+		<path d="M25.47,1022.3 C25.47,1024.33 24.775,1025.975 23.917,1025.975 C23.059,1025.975 22.363,1024.33 22.363,1022.3 C22.363,1020.269 23.059,1018.624 23.917,1018.624 C24.775,1018.624 25.47,1020.269 25.47,1022.3 Z" fill="#000000" fill-rule="evenodd" id="path3661" stroke="none"/>
+		<path color="#000000" d="M17.2,1019.568 C16.004,1019.817 15.976,1020.845 15.513,1021.582 C15.513,1021.582 15.544,1018.507 17.2,1019.568 Z" display="inline" fill="#ffffff" fill-opacity="0.862" id="path3667" stroke="none" stroke-width="1" visibility="visible"/>
+		<path color="#000000" d="M24.374,1019.568 C23.178,1019.817 23.149,1020.845 22.686,1021.582 C22.686,1021.582 22.717,1018.507 24.374,1019.568 Z" display="inline" fill="#ffffff" fill-opacity="0.862" id="path3669" stroke="none" stroke-width="1" visibility="visible"/>
+		<path color="#000000" d="M12.798,1020.414 C12.736,1019.311 13.902,1014.793 18.169,1011.87 C20.364,1010.366 24.024,1010.392 26.225,1011.137 C21.01,1011.265 13.898,1014.858 12.798,1020.414 Z" display="inline" fill="#ffffff" id="path3699" stroke="none" stroke-width="1" visibility="visible"/>
+		<path color="#000000" d="M22.075,1017.81 C23.144,1016.782 24.413,1015.882 26.591,1016.793 L26.347,1018.095 C24.201,1017.094 23.633,1017.544 22.075,1017.81 Z" display="inline" fill="#000000" id="path3741" stroke="none" stroke-width="1" visibility="visible"/>
+		<path color="#000000" d="M18.713,1018.758 C17.955,1017.482 16.972,1016.276 14.63,1016.574 L14.519,1017.894 C16.854,1017.501 17.282,1018.086 18.713,1018.758 Z" display="inline" fill="#000000" id="path3743" stroke="none" stroke-width="1" visibility="visible"/>
+		<path color="#000000" d="M27.349,1029.83 C26.676,1030.733 25.291,1030.581 24.35,1030.665 C23.41,1030.749 22.312,1030.522 21.157,1030.233 C18.846,1029.656 16.297,1028.738 14.166,1029.888 L14.312,1029.962 C15.97,1029.068 16.649,1033.028 19.013,1033.618 C20.195,1033.913 23.342,1031.241 24.477,1031.139 C25.612,1031.037 26.667,1030.99 27.486,1029.889 L27.349,1029.83 Z" display="inline" fill="#000000" font-family="Bitstream Vera Sans" font-size="medium" font-style="normal" font-weight="400" id="path3745" stroke="none" stroke-width="1" text-anchor="start" visibility="visible"/>
+	</g>
+</svg>

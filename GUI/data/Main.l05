@@ -1,0 +1,39 @@
+﻿/*
+========================================================================
+ Name        : HelloWorldContainer.l01
+ Author      : Marco Bellino
+ Copyright   : FuzzyByte
+ Description : 
+========================================================================
+*/
+// localized strings for language: UK English (01)
+
+#define txt_about 		"Informazioni"
+#define txt_register_op_net 	"Con ID Licenza"
+#define txt_register_op_code 	"Con Codice"
+#define txt_buy 		"Acquista"
+#define txt_register 		"Registra"
+
+#define txt_about_header	"Info. IconHider"
+
+#define txt_reg_code 		"Codice di Registrazione:"
+#define txt_prod_1 		"ID Licenza Parte 1:"
+#define txt_prod_2 		"ID Licenza Parte 2:"
+
+#define txt_inprogress		"Trasferimento in Corso..\nAttendere Prego."
+
+#define txt_down_completed 	"L'aggiornamento e' stato salvato nei messaggi in arrivo."
+#define txt_no_update 		"IconHider e' gia' aggiornato all'ultima versione disponibile."
+#define txt_confirm_update 	"E' disponibile una nuova versione.\nScaricare l'aggiornamento?"
+
+#define txt_ok_code		"Registrazione Completata!"
+
+#define txt_err_code		"Codice di Registrazione errato!\nInserire un codice corretto."
+#define txt_err_licnotfound	"ID Licenza non valido.\nInserire un ID Licenza corretto."
+#define txt_err_licdifimei	"ID Licenza gia' registrato.\nAcquistare un nuovo ID Licenza."
+#define txt_err_licbanned	"Troppe Richieste.\nRiprovare piu' tardi."
+#define txt_err_licunkdata	"Problema nella Risposta del Server.\nRiprovare piu' tardi."
+#define txt_err_lictransmis	"Problema nella Comunicazione.\nRiprovare piu' tardi."
+#define txt_err_licgeneral	"Problema Generico.\nRiprovare piu' tardi."
+
+#define txt_err_unavailinfree	"Questa funzione non e' disponibile nella versione TRIAL\nAcquistare la versione FULL."

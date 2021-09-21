@@ -1,0 +1,8 @@
+﻿IconHider v1.3
+http://www.Symbian-Toys.com/
+
+In the TRIAL version you can only hide 1 icon and you can't change the default Ghost Code *0000*
+Buy the FULL version to hide up to 20 icons and customize the Ghost Code.
+
+You can even hide IconHider itself.
+If you hide IconHider, you can still launch it by dialling the Ghost Code *0000* and IconHider configuration panel will immediately appear.

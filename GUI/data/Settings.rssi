@@ -1,0 +1,199 @@
+
+#include "Settings.hrh"
+#include "Settings.loc"
+
+
+RESOURCE AVKON_VIEW r_settings_view
+	{
+	menubar = r_settings_menubar;  
+	cba = R_AVKON_SOFTKEYS_OPTIONS_EXIT;
+	}
+
+//----------------------------------------------------
+//   
+//    r_guardgui_menubar_view2
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_BAR r_settings_menubar
+	{
+	titles =
+		{
+		MENU_TITLE { menu_pane = r_common_menu; },
+		MENU_TITLE { menu_pane = r_settings_menu;  }
+		};
+	}
+
+
+//----------------------------------------------------
+//   
+//    r_guardgui_view3_menu
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_PANE r_settings_menu
+	{
+	items =
+		{
+//		MENU_ITEM { command = ECheckUpdates; txt = txt_check_updates; },
+		MENU_ITEM { command = ESendObex; cascade = r_obex_cascade; txt = txt_send; }
+//		MENU_ITEM { command = EChange; txt = txt_change; }
+		// TODO: Aggiungili qui... Il Change deve essere il primo perche' e' il comando predefinito
+		};
+	}
+
+
+RESOURCE ARRAY r_send_popup
+    {
+    items =
+        {
+        LBUF { txt = txt_send_ir; },
+        LBUF { txt = txt_send_bt; }
+	};
+    }
+
+
+RESOURCE MENU_PANE r_obex_cascade
+    {
+    items=
+        {
+        MENU_ITEM { command=ESendIR; txt=txt_send_ir; },
+        MENU_ITEM { command=ESendBT; txt=txt_send_bt; }
+        };
+    }
+	
+
+RESOURCE STATUS_PANE_APP_MODEL r_settings_status_pane
+	{
+	panes =
+		{
+		SPANE_PANE
+			{
+			id = EEikStatusPaneUidTitle;
+			type = EAknCtTitlePane;
+			resource = r_settings_title_resource;
+			}
+		};
+	}
+
+RESOURCE TITLE_PANE r_settings_title_resource
+	{
+	txt = txt_settings_title;
+	}
+
+
+
+
+RESOURCE DIALOG r_code_visible_query
+{
+	flags = EGeneralQueryFlags;
+	buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+	items =
+	{
+		DLG_LINE
+		{
+			type = EAknCtQuery;
+			id = EGeneralQuery;
+			control = AVKON_DATA_QUERY
+			{
+				//layout = EPinLayout;
+				//label  = txt_pass;
+				//control = EDWIN
+				//{
+				//};
+				
+				label  = txt_code;
+				layout = ENumberLayout;
+				control = AVKON_INTEGER_EDWIN
+					{
+					min = 0;
+					max = 99999999;
+					};   
+			};
+		}
+	};
+}
+
+
+/*
+RESOURCE AVKON_SETTING_ITEM_LIST r_settings_item_list
+	{
+	title = txt_settings_title;
+	items =
+		{
+		AVKON_SETTING_ITEM
+			{
+			identifier = EStatus;
+			name = txt_status;
+			setting_page_resource = r_settings_status_setpage;
+			associated_resource = r_setting_status_popup_texts;
+			}
+		};
+	}
+
+
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_setting_status_popup_texts
+    {
+    setting_texts_resource = r_settings_status_array;
+    popped_up_texts_resource = r_settings_status_array_popup;
+    }
+
+
+// Valori che escono fuori in fase di modifica
+RESOURCE ARRAY r_settings_status_array_popup
+    {
+    items =
+        {
+        LBUF { txt = txt_active; },
+        LBUF { txt = txt_inactive; },
+        LBUF { txt = txt_onsimchange; },
+        LBUF { txt = txt_auto; }
+        };
+    }
+
+
+RESOURCE ARRAY r_settings_status_array
+    {
+    items =
+        {
+        AVKON_ENUMERATED_TEXT {value = 1; text = txt_always;},
+        AVKON_ENUMERATED_TEXT {value = 3; text = txt_never;},
+        AVKON_ENUMERATED_TEXT {value = 4; text = txt_onsimchange;},
+        AVKON_ENUMERATED_TEXT {value = 7; text = txt_auto;}
+        };
+    }
+
+
+RESOURCE AVKON_SETTING_PAGE r_settings_status_setpage
+	{
+	label= txt_settings_status_label;
+	type = EAknCtPopupSettingList;
+	editor_resource_id = r_setting_status_list;
+	}
+
+RESOURCE POPUP_SETTING_LIST r_setting_status_list
+	{
+	flags = 0;
+	}
+*/
+
+    
+            
+
+RESOURCE TBUF r_create_profile { buf=txt_create_profile; }
+RESOURCE TBUF r_current_profile { buf=txt_current_profile; }
+RESOURCE TBUF r_status { buf=txt_status; }
+RESOURCE TBUF r_active { buf=txt_active; }
+RESOURCE TBUF r_inactive { buf = txt_inactive; }
+RESOURCE TBUF r_demo { buf=txt_demo; }
+RESOURCE TBUF r_buy_full { buf=txt_buy_full; }
+RESOURCE TBUF r_register { buf=txt_register; } 
+RESOURCE TBUF r_insert_code { buf=txt_insert_code; }
+RESOURCE TBUF r_check_updates { buf=txt_check_updates; }
+RESOURCE TBUF r_send { buf=txt_send; }
+RESOURCE TBUF r_about { buf=txt_about; }
+RESOURCE TBUF r_about_2nd  { buf=txt_about_2nd; }
+RESOURCE TBUF r_code { buf=txt_code; }
+RESOURCE TBUF r_hidden_apps { buf=txt_hidden_apps; }
+
+RESOURCE TBUF r_err_short_code { buf=txt_err_short_code; }

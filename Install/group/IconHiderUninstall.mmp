@@ -1,0 +1,34 @@
+/*
+============================================================================
+ Name		: RomPatcherInstall.mmp
+ Author	  : Marco Bellino
+ Copyright   : Guardian-Mobile.com
+ Description : This is the project specification file for RomPatcherInstall.
+============================================================================
+*/
+
+TARGET		  IconHiderUninstall_20024267.exe
+TARGETTYPE	  exe
+UID		  	0 0x20024267
+SECUREID	  0x20024267
+
+USERINCLUDE	 ..\inc
+SYSTEMINCLUDE   \epoc32\include
+
+SOURCEPATH	  ..\src
+SOURCE		  IconHiderInstall.cpp
+
+STATICLIBRARY commonlib.lib
+
+LIBRARY		 euser.lib bafl.lib efile.lib estor.lib efsrv.lib charconv.lib
+LIBRARY		aknnotify.lib eiksrv.lib CentralRepository.lib flogger.lib
+LIBRARY	    apgrfx.lib apmime.lib
+LIBRARY ezip.lib ws32.lib msgs.lib 
+
+
+#ifdef ENABLE_ABIV2_MODE
+  DEBUGGABLE_UDEBONLY
+#endif
+CAPABILITY WriteDeviceData WriteUserData
+
+MACRO _LOGGING

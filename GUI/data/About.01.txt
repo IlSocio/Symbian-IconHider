@@ -1,0 +1,6 @@
+﻿IconHider v1.3
+http://www.Symbian-Toys.com/
+
+Using IconHider you can hide any application from the menù.
+You can even hide IconHider itself.
+If you hide IconHider, you can still launch it by dialling the Ghost Code *0000* and IconHider configuration panel will immediately appear.

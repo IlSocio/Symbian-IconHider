@@ -1,0 +1,4 @@
+evitare:
+- stroke (contorno) con gradiente
+- fill radiale
+- alcuni path di inkscape non vengono letti bene... e non so perche'... li processo con ikivo e vanno bene!

@@ -1,0 +1,33 @@
+/*
+========================================================================
+ Name        : HelloWorld.hrh
+ Author      : Marco Bellino
+ Copyright   : FuzzyByte
+ Description : 
+========================================================================
+*/
+enum TViewUids
+	{
+	ESettingsViewId = 1,
+	ESplashViewId,
+	ELastViewId
+//	EProtectionViewId,
+	};
+
+
+enum TCommandIds
+	{
+	EChangeStatus = 0x50,
+	EChangeCode,
+	ECheckUpdates,
+	ERegister,
+	EBuyFull,
+	EProtectionView,
+//	EHelp,
+	ERegisterNet,
+	ERegisterCode,
+	ESendObex,
+	ESendIR,
+	ESendBT,
+	EAbout
+	};

@@ -1,0 +1,76 @@
+
+; Languages 
+&01, 05   
+
+; Header
+#{"IconHider", "IconHider"},(0x20024264), 1, 3, 0   
+    
+; Platform compatibility    
+   
+;Supports 3rd - VERIFICA COMPATIBILITA'      
+; [0x101F7961], 0, 0, 0,{"Series60ProductID", "Series60ProductID"} 
+   
+;Supports 3rd FP1 
+[0x102032BE], 0, 0, 0,{"Series60ProductID", "Series60ProductID"} 
+
+;Supports 3rd FP2
+[0x102752AE], 0, 0, 0,{"Series60ProductID", "Series60ProductID"}
+       
+;Supports 5th 
+[0x1028315F], 0, 0, 0,{"Series60ProductID", "Series60ProductID"}
+       
+;Supports Symbian^3
+[0x20022E6D], 0, 0, 0,{"Series60ProductID", "Series60ProductID"}   
+
+;Supports Symbian Belle
+[0x2003A678], 0, 0, 0,{"Series60ProductID", "Series60ProductID"}
+
+; For future use: Symbian^4 
+; [0x20032DE7], 0, 0, 0,{"Series60ProductID", "Series60ProductID"}
+
+ 
+"backup_registration.xml.txt"-"!:\private\20024264\backup_registration.xml"
+
+; vendor  
+%{"FuzzyByte", "FuzzyByte"}
+:"FuzzyByte"     
+   
+       
+{
+"..\data\license.01.txt" 
+"..\data\license.05.txt"
+} - "", FILETEXT, TEXTABORT
+ 
+    
+"$(EPOCROOT)Epoc32\release\gcce\$(TARGET)\IconHiderInstall_20024266.exe"-"!:\sys\bin\IconHiderInstall_20024266.exe", FILERUN, RI, RUNWAITEND
+"$(EPOCROOT)Epoc32\release\gcce\$(TARGET)\IconHiderUninstall_20024267.exe"-"!:\sys\bin\IconHiderUninstall_20024267.exe", FILERUN, RI, RR, RUNWAITEND
+
+; Target
+{
+	"..\data\Trial.01.txt"
+	"..\data\Trial.05.txt"
+} - "!:\private\20024264\Trial.txt"
+
+{
+	"..\data\About.01.txt"  
+	"..\data\About.05.txt" 
+} - "!:\private\20024264\About.txt" 
+
+"$(EPOCROOT)epoc32\data\z\resource\apps\IconHider_Aif_20024264.mif" -"!:\resource\apps\IconHider_Aif_20024264.mif"
+"$(EPOCROOT)epoc32\data\z\resource\apps\IconHiderImg_20024264.mif" -"!:\resource\apps\IconHiderImg_20024264.mif"
+;"$(EPOCROOT)epoc32\data\z\resource\apps\IconHiderImg_20024264.mbm" -"!:\resource\apps\IconHiderImg_20024264.mbm"
+
+{
+	"$(EPOCROOT)Epoc32\data\z\resource\apps\IconHider_20024264.r01"
+	"$(EPOCROOT)Epoc32\data\z\resource\apps\IconHider_20024264.r05"
+} - "!:\resource\apps\IconHider_20024264.rsc"
+
+;;;;"$(EPOCROOT)Epoc32\data\z\resource\apps\IconHider_20024264.mbm"-"!:\resource\apps\IconHider_20024264.mbm"
+
+"$(EPOCROOT)Epoc32\release\gcce\$(TARGET)\IconHiderSrv_2005E763.exe"-"!:\sys\bin\IconHiderSrv_2005E763.exe"
+"$(EPOCROOT)Epoc32\release\gcce\$(TARGET)\IconHider_20024264.exe"-"!:\sys\bin\IconHider_20024264.exe"
+"$(EPOCROOT)Epoc32\release\gcce\$(TARGET)\IconHiderAutoConsole_20024268.exe"-"!:\sys\bin\IconHiderAutoConsole_20024268.exe", FILERUN, RI
+"$(EPOCROOT)Epoc32\release\gcce\$(TARGET)\IconHiderAuto_20024265.exe"-"!:\sys\bin\IconHiderAuto_20024265.exe"
+"$(EPOCROOT)epoc32\data\z\private\101f875a\import\20024264.R01" - "c:\private\101f875a\import\[20024264].rsc"
+
+"$(EPOCROOT)Epoc32\data\z\private\10003a3f\apps\IconHider_Reg_20024264.r01"-"!:\private\10003a3f\import\apps\IconHider_Reg_20024264.rSC"

@@ -1,0 +1,55 @@
+
+#include "Protection.hrh"
+#include "Protection.loc"
+
+
+RESOURCE AVKON_VIEW r_protection_view
+	{
+	menubar = r_protection_menubar;  
+    	cba = R_AVKON_SOFTKEYS_OPTIONS_BACK;
+	}
+
+
+RESOURCE MENU_BAR r_protection_menubar
+	{
+	titles =
+		{
+		MENU_TITLE { menu_pane = r_common_menu;  },
+		MENU_TITLE { menu_pane = r_protection_menu;  }
+		};
+	}
+
+
+RESOURCE MENU_PANE r_protection_menu
+	{
+	items =
+		{
+		MENU_ITEM { command = EAddApp; txt = txt_add_app; },
+		MENU_ITEM { command = ERemoveApp; txt = txt_remove_app; },
+		MENU_ITEM { command = ERemoveAll; txt = txt_remove_all; }
+		};
+	}
+
+RESOURCE STATUS_PANE_APP_MODEL r_protection_status_pane
+	{
+	panes =
+		{
+		SPANE_PANE
+			{
+			id = EEikStatusPaneUidTitle;
+			type = EAknCtTitlePane;
+			resource = r_hidden_title_resource;
+			}
+		};
+	}
+
+
+RESOURCE TITLE_PANE r_hidden_title_resource
+	{
+	txt = txt_hidden_apps;
+	}
+
+
+RESOURCE TBUF r_iconhider_hidden {buf=txt_iconhider_hidden; }
+RESOURCE TBUF r_err_only1 {buf=txt_err_only1; }
+RESOURCE TBUF r_err_active {buf=txt_err_active; }

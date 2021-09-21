@@ -1,0 +1,25 @@
+#include <appinfo.rh>
+#include <uikon.rh>
+#include <IconHider_20024264.rsg>
+
+UID2 KUidAppRegistrationResourceFile
+UID3 0x20024264
+
+RESOURCE APP_REGISTRATION_INFO
+	{
+	app_file="IconHider_20024264";
+	localisable_resource_file = "\\resource\\apps\\IconHider_20024264";
+	localisable_resource_id = R_LOCALISABLE_APP_INFO;
+	
+	embeddability=KAppNotEmbeddable;
+	newfile=KAppDoesNotSupportNewFile;
+	opaque_data = r_startup_type; 
+	// Quando viene lanciata da menu' viene passato opaque_data
+	// Quando viene lanciata dall'autostart non viene passato opaque_data
+	}
+
+RESOURCE NUMBER_INT8 r_startup_type
+	{
+	value = 1;
+	}
+
